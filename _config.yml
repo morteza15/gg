@@ -1,0 +1,31 @@
+name: "Gameich.com"
+description: "It's all about games & everything related to it!"
+author: Gameich
+url: https://www.gameich.com
+baseurl: ""
+permalink: /:title/
+paginate_path: "/page/:num/"
+paginate: 15
+commonTags: ['how-to','review','news','game-idea']
+disqus:
+staticmanUrl: https://my-gg.herokuapp.com/v2/entry/morteza15/gg/master/comments
+google_analytics: UA-207988411-1
+webmaster_verifications:
+  google: 
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+sass:
+  style: :compressed # or :expanded
+feed:
+  excerpt_only: true      
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed 
+  - jekyll-paginate
+  - jekyll-redirect-from
+  - jekyll-seo-tag  
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
